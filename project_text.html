@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Request Form</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey Request Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform.
+        <br />Tell us more about you.
+      </p>
+    </header>
+    <main>
+      <form action="#" id="survey-form" method="post">
+        <label for="name-label"
+          >Name
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your Name"
+            required
+        /></label>
+        <label for="email-label"
+          >Email
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your Email"
+            required
+        /></label>
+        <label for="number-label"
+          >Age
+          <input
+            type="number"
+            name="number"
+            id="number"
+            min="13"
+            max="120"
+            placeholder="Your age"
+        /></label>
+
+        <fieldset>
+          <label for="dropdown"> How did you find us?</label>
+          <select name="dropdown" id="dropdown">
+            <option value="" hidden>-- Select --</option>
+            <option value="1">Google</option>
+            <option value="2">A friend</option>
+            <option value="3">A Coding Course</option>
+          </select>
+          <p>Are you new at coding?</p>
+          <label class="label-radio" for="yes"
+            ><input
+              id="yes"
+              type="radio"
+              name="yesno"
+              class="radio"
+              value="yes"
+            />
+            Yes</label
+          >
+          <label class="label-radio" for="no"
+            ><input
+              id="no"
+              type="radio"
+              name="yesno"
+              class="radio"
+              value="no"
+            />
+            No</label
+          >
+        </fieldset>
+
+        <p>What level are you at right now? (Multiple choice possible)</p>
+        <div class="flexcontainer">
+          <fieldset class="checkbox">
+            <div class="checkitems">
+              <label for="html">HTML</label
+              ><input type="checkbox" name="level[]" id="html" value="html" />
+            </div>
+            <div class="checkitems">
+              <label for="css">CSS</label
+              ><input type="checkbox" name="level[]" id="css" value="css" />
+            </div>
+            <div class="checkitems">
+              <label for="java">JavaScript</label
+              ><input type="checkbox" name="level[]" id="java" value="java" />
+            </div>
+          </fieldset>
+          <fieldset class="checkbox">
+            <div class="checkitems">
+              <label for="php">PHP</label
+              ><input type="checkbox" name="level[]" id="php" value="php" />
+            </div>
+            <div class="checkitems">
+              <label for="python">Python</label
+              ><input
+                type="checkbox"
+                name="level[]"
+                id="python"
+                value="python"
+              />
+            </div>
+            <div class="checkitems">
+              <label for="cplus">C+/C++</label
+              ><input type="checkbox" name="level[]" id="cplus" value="cplus" />
+            </div>
+          </fieldset>
+        </div>
+        <fieldset>
+          <label for="about"
+            >Tell us more about you:
+            <textarea
+              name="about"
+              id="about"
+              cols="30"
+              rows="5"
+              placeholder="Type in here..."
+            ></textarea>
+          </label>
+        </fieldset>
+        <input class="button" type="submit" value="Submit" id="submit" />
+      </form>
+    </main>
+  </body>
+</html>

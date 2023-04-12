@@ -1,0 +1,75 @@
+body {
+  width: 100%;
+  margin: 50px auto; 
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: linear-gradient(-225deg, #CBBACC 0%, #2580B3 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {max-width: 100%; padding-top: 0;}
+
+h1 {text-align: center; font-size: 3rem; font-weight: 400; text-transform: uppercase; color: #465f6d; margin-top: 0px;}
+
+
+#description {text-align: center; font-size: 1.2rem; color: #465f6d; padding-top: 0; margin: 0 0 60px 0;}
+h1, #description {padding-bottom: 0px;}
+label, p {color: #465f6d;}
+
+.label-radio {padding: 0 20px 0 0;}
+
+form {
+  background-image: linear-gradient(125deg, #CBBACC 0%, #2580B3 100%); 
+  border: 2px solid #a49ba5;
+  margin: 20px auto; 
+  padding: 50px; 
+  width: 60vw; 
+  max-width: 500px;
+  min-width: 300px; 
+  font-size: 1.2em; 
+  border-radius: 50px; 
+  box-shadow: 0px 0px 30px 20px rgba(0, 0, 0, 0.4)}
+
+fieldset {border: none; margin: 10px 0; padding: 20px 0;}
+input, textarea, select {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 10px 0 20px 0;
+  width: 100%;
+  min-height: 3em;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  padding: 20px;
+  font-size: 1rem;
+  background: linear-gradient(to bottom, #D5DEE7 0%, #E8EBF2 50%, #E2E7ED 100%), linear-gradient(to bottom, rgba(0,0,0,0.02) 50%, rgba(255,255,255,0.02) 61%, rgba(0,0,0,0.02) 73%), linear-gradient(33deg, rgba(255,255,255,0.20) 0%, rgba(0,0,0,0.20) 100%);
+  color: #465f6d;
+  border-radius: 5px;
+}
+label {text-transform: uppercase; font-weight: 400;}
+.radio {vertical-align: middle; margin: 0 0.5em 0 0; width: unset; }
+textarea {resize: none;}
+
+/*   Checkbox    ----    */
+.flexcontainer {display: flex; justify-content: center;}
+.checkbox {margin: 0; padding: 0;}
+.checkitems {display: flex; align-items:center; align-content:space-between; margin:20px 20px;}
+.checkitems label, .checkitems input {width: 20%; margin: 0 30px;}
+.checkitems input {min-height: 2em;}
+.flexmargin {margin: 0 30px;}
+
+/*   submitbutton    ----   */
+.button {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  min-width: 200px;
+  color: #465f6d;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.button:hover {background: #465f6d; color: #e8dbe8; border: 2px solid #CBBACC;}
+.button:active {transform: scale(1.1); transition: all 300ms;}
